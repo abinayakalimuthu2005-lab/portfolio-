@@ -4,411 +4,443 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Abinaya Portfolio</title>
 
+    <!-- CSS -->
+
     <link rel="stylesheet" href="style.css">
 
+    <!-- GOOGLE FONT -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- MAIN CONTAINER -->
 
-    <nav>
-
-        <h2 class="logo">Abinaya</h2>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#projects">Projects</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-        <button id="dark-mode-toggle">Dark Mode</button>
-
-    </nav>
+    <div class="main-container">
 
 
-    <!-- HERO SECTION -->
+        <!-- SIDEBAR -->
 
-    <section class="hero" id="home">
-        
-         <div class="blur-circle circle1"></div>
-         <div class="blur-circle circle2"></div>
+        <div class="sidebar">
 
-        <div class="hero-content">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
 
-            <!-- LEFT SIDE -->
+            <a href="#skills">
+                <i class="fa-solid fa-code"></i>
+            </a>
 
-            <div class="hero-text">
+            <a href="#projects">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
 
-                <h1>Hi, I'm Abinaya</h1>
+            <a href="#education">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </a>
 
-                <h3>
-    <span class="typing-text"></span>
-</h3>
+            <a href="#certifications">
+                <i class="fa-solid fa-certificate"></i>
+            </a>
 
-                <p>
-                    I build responsive and user-friendly web applications
-                    using modern web technologies.
-                </p>
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
 
-                <div class="hero-buttons">
+        </div>
 
-                    <a href="#projects">
-                        <button>View Projects</button>
+
+        <!-- DASHBOARD CONTENT -->
+
+        <div class="dashboard-content">
+
+
+            <!-- HERO SECTION -->
+
+            <section class="card hero-card" id="home">
+
+                <div class="hero-content">
+
+                    <div class="hero-image">
+
+                        <img src="assets/profile1.jpg" alt="Abinaya">
+
+                    </div>
+
+
+                    <div class="hero-text">
+
+                        <h1>Hi, I'm <span>Abinaya</span></h1>
+
+                        <h3><span class="typing-text"></span></h3>
+
+                        <p>
+                            Passionate Frontend Developer focused on building
+                            modern responsive websites and UI experiences.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="#projects">
+
+                                <button>View My Work</button>
+
+                            </a>
+
+                            <a href="resume/ABINAYA.K_Resume.pdf" download>
+
+                                <button class="cv-btn">
+                                    Download CV
+                                </button>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SKILLS -->
+
+            <section class="card" id="skills">
+
+                <h2>My Skills</h2>
+
+                <div class="skill">
+
+                    <span>HTML</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar html"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill">
+
+                    <span>CSS</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar css"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill">
+
+                    <span>JavaScript</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar js"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill">
+
+                    <span>React</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar react"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill">
+
+                    <span>Python</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar python"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="skill">
+
+                    <span>PHP</span>
+
+                    <div class="progress">
+
+                        <div class="progress-bar php"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+
+            <section class="card" id="projects">
+
+                <h2>Projects</h2>
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+
+                        <img src="assets/project1.png">
+
+                        <h3>Portfolio Website</h3>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <img src="assets/project2.png">
+
+                        <h3>Food Delivery App</h3>
+
+                    </div>
+
+                    <div class="project-card">
+
+                        <img src="assets/project3.png">
+
+                        <h3>Internship Portal</h3>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- EDUCATION -->
+
+            <section class="card" id="education">
+
+                <h2>Education</h2>
+
+                <div class="edu-box">
+
+                    <h3>B.Tech Information Technology</h3>
+
+                    <p>Nehru Institute of Engineering and Technology</p>
+
+                </div>
+
+               
+
+            </section>
+
+
+            <!-- CERTIFICATIONS -->
+
+<section class="card" id="certifications">
+
+    <h2>Certifications & Internships</h2>
+
+    <div class="certificate-grid">
+
+        <!-- AI -->
+
+        <div class="certificate-card">
+
+            <h3>Artificial Intelligence Fundamentals</h3>
+
+            <p>
+                Successfully completed certification in Artificial Intelligence concepts and applications.
+            </p>
+
+            <a class="view-cert" href="assets/1.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- CYBER SECURITY -->
+
+        <div class="certificate-card">
+
+            <h3>Ethical Hacking & Cyber Security</h3>
+
+            <p>
+                Completed certification focused on ethical hacking and cybersecurity fundamentals.
+            </p>
+
+            <a class="view-cert" href="assets/3.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- FULL STACK -->
+
+        <div class="certificate-card">
+
+            <h3>Full Stack Development</h3>
+
+            <p>
+                Completed training in frontend and backend web application development.
+            </p>
+
+            <a class="view-cert" href="assets/6.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- PYTHON -->
+
+        <div class="certificate-card">
+
+            <h3>Python Programming</h3>
+
+            <p>
+                Successfully completed Python programming certification course.
+            </p>
+
+            <a class="view-cert" href="assets/4.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- WEB DEVELOPMENT -->
+
+        <div class="certificate-card">
+
+            <h3>Responsive Web Development</h3>
+
+            <p>
+                Completed certification in responsive website design and development.
+            </p>
+
+            <a class="view-cert" href="assets/5.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- CLOUD -->
+
+        <div class="certificate-card">
+
+            <h3>NPTEL - Cloud Computing</h3>
+
+            <p>
+                Successfully completed NPTEL certification in Cloud Computing.
+            </p>
+
+            <a class="view-cert" href="assets/2.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- INTERNSHIP -->
+
+        <div class="certificate-card">
+
+            <h3>Internship - Full Stack Developer</h3>
+
+            <p>
+                Worked on frontend and backend web application development during internship.
+            </p>
+
+            <a class="view-cert" href="assets/internship1.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+
+
+        <!-- WEB DEVELOPER -->
+
+        <div class="certificate-card">
+
+            <h3>Internship - Web Developer</h3>
+
+            <p>
+                Developed responsive websites and UI components during internship training.
+            </p>
+
+            <a class="view-cert" href="assets/internship2.jpg" target="_blank" rel="noopener">View Certificate</a>
+
+        </div>
+    </div>
+
+
+</section>
+
+
+
+            <!-- CONTACT -->
+
+            <section class="card" id="contact">
+
+                <h2>Contact Me</h2>
+
+                <div class="contact-buttons">
+
+                    <a href="https://linkedin.com" target="_blank">
+
+                        <button>
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                            LinkedIn
+
+                        </button>
+
                     </a>
 
-                    <a href="resume/ABINAYA.K_Resume.pdf" download>
-                        <button class="resume-btn">Download Resume</button>
+                    <a href="https://github.com" target="_blank">
+
+                        <button>
+
+                            <i class="fa-brands fa-github"></i>
+
+                            GitHub
+
+                        </button>
+
+                    </a>
+
+                    <a href="mailto:abinaya@gmail.com">
+
+                        <button>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            Email
+
+                        </button>
+
                     </a>
 
                 </div>
 
-            </div>
+            </section>
 
-
-            <!-- RIGHT SIDE -->
-
-            <div class="hero-image">
-
-                <img src="assets/profile1.jpg" alt="Abinaya Photo">
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT SECTION -->
-
-<section class="about" id="about">
-
-    <div class="about-container">
-
-        <!-- LEFT SIDE -->
-
-        <div class="about-image">
-
-            <img src="assets/about.jpg" alt="Abinaya Photo">
-
-        </div>
-
-
-        <!-- RIGHT SIDE -->
-
-        <div class="about-content">
-
-            <h2>About Me</h2>
-
-            <p>
-                Hello! I'm Abinaya, a passionate Frontend Developer and IT graduate
-                who enjoys creating modern, responsive and user-friendly web applications.
-            </p>
-
-            <p>
-                I have experience working with HTML, CSS, JavaScript, React,
-                Node.js and MongoDB. I love learning new technologies and
-                improving my development skills every day.
-            </p>
-
-            <p>
-                My goal is to build impactful digital experiences and grow as a
-                Full Stack Developer in the software industry.
-            </p>
-
-            <div class="about-details">
-
-                <div class="detail-card">
-
-                    <h3>Fresher</h3>
-
-                    <span>Frontend Developer</span>
-
-                </div>
-
-                <div class="detail-card">
-
-                    <h3>MERN Stack</h3>
-
-                    <span>Web Development</span>
-
-                </div>
-
-                <div class="detail-card">
-
-                    <h3>Responsive UI</h3>
-
-                    <span>Modern Design</span>
-
-                </div>
-
-            </div>
 
         </div>
 
     </div>
 
-</section>
-    <!-- SKILLS SECTION -->
 
-    <section class="skills" id="skills">
-
-        <h2>Technical Skills</h2>
-
-        <div class="skill-box">
-
-            <div class="skill">HTML</div>
-
-            <div class="skill">CSS</div>
-
-            <div class="skill">JavaScript</div>
-
-            <div class="skill">Python</div>
-
-            <div class="skill">MERN</div>
-
-        </div>
-
-    </section>
-
-
-        
-    <!-- PROJECT SECTION -->
-
-<section class="projects" id="projects">
-
-    <h2>My Projects</h2>
-
-    <div class="project-container">
-
-        <!-- PROJECT 1 -->
-
-        <div class="project-card">
-
-            <img src="assets/project1.png" alt="Portfolio Project">
-
-            <h3>Portfolio Website</h3>
-
-            <p>
-                A modern responsive personal portfolio website developed
-                using HTML, CSS and JavaScript.
-            </p>
-
-            <div class="tech-stack">
-                HTML • CSS • JavaScript
-            </div>
-
-        </div>
-
-
-        <!-- PROJECT 2 -->
-
-        <div class="project-card">
-
-            <img src="assets/project2.png" alt="Food Delivery Project">
-
-            <h3>Food Delivery Web App</h3>
-
-            <p>
-                Developed a responsive food ordering application using
-                React, Node.js and MongoDB.
-            </p>
-
-            <div class="tech-stack">
-                React • Node.js • MongoDB
-            </div>
-
-        </div>
-
-
-        <!-- PROJECT 3 -->
-
-        <div class="project-card">
-
-            <img src="assets/project3.png" alt="Internship Portal">
-
-            <h3>Internship Portal</h3>
-
-            <p>
-                A web portal where users can register for internships
-                and workshops easily.
-            </p>
-
-            <div class="tech-stack">
-                HTML • CSS • JavaScript
-            </div>
-
-        </div>
-
-    </div>
-
-  <!-- TOOLS -->
-
-        <div class="skills-category">
-
-            <h3>Tools</h3>
-
-            <div class="skill-box">
-
-                <div class="skill">Git</div>
-
-                <div class="skill">GitHub</div>
-
-                <div class="skill">VS Code</div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-        <!-- FRONTEND -->
-
-        <div class="skills-category">
-
-            <h3>Frontend</h3>
-
-
-            <div class="skill-box">
-
-                <div class="skill">HTML</div>
-
-                <div class="skill">CSS</div>
-
-                <div class="skill">JavaScript</div>
-
-                <div class="skill">React</div>
-
-            </div>
-
-
-
-        <!-- BACKEND -->
-
-        <div class="skills-category">
-
-            <h3>Backend</h3>
-
-
-            <div class="skill-box">
-
-                <div class="skill">Node.js</div>
-
-                <div class="skill">Express.js</div>
-
-            </div>
-
-       
-
-
-        <!-- DATABASE -->
-
-        <div class="skills-category">
-
-            <h3>Database</h3>
-
-
-            <div class="skill-box">
-
-                <div class="skill">MongoDB</div>
-
-            </div>
-
-        
-
-
-    <!-- SOCIAL BUTTONS -->
-
-<div class="contact-buttons">
-
-    <a href="https://www.linkedin.com/in/abinaya-k-3b0126317" target="_blank">
-
-        <button>
-            <i class="fa-brands fa-linkedin"></i>
-            LinkedIn
-        </button>
-
-    </a>
-
-
-    <a href="https://github.com/abhinayakalimuthu-byte" target="_blank">
-
-        <button>
-            <i class="fa-brands fa-github"></i>
-            GitHub
-        </button>
-
-    </a>
-
-
-    <a href="mailto:abhiayakalimuthu@gmail.com">
-
-        <button>
-            <i class="fa-solid fa-envelope"></i>
-            Email
-        </button>
-
-    </a>
-
-
-    <a href="resume/ABINAYA.K_Resume.pdf" download>
-
-        <button class="resume-btn">
-            <i class="fa-solid fa-download"></i>
-            Resume
-        </button>
-
-    </a>
-
-</div>
-
-
-    <!-- SOCIAL BUTTONS -->
-
-    <div class="contact-buttons">
-
-        <a href="https://www.linkedin.com/in/abinaya-k-3b0126317" target="_blank">
-
-            <button>LinkedIn</button>
-
-        </a>
-
-
-        <a href="https://github.com/abhinayakalimuthu-byte" target="_blank">
-
-            <button>GitHub</button>
-
-        </a>
-
-
-        <a href="resume/ABINAYA.K_Resume.pdf" download>
-
-            <button class="resume-btn">Download Resume</button>
-
-        </a>
-
-    </div>
-
-</section>
-
+    <!-- JS -->
 
     <script src="script.js"></script>
 
